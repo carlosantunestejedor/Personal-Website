@@ -1,0 +1,205 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+	padding-top:0;
+	padding-bottom: 0;
+	background-color: transparent;
+	transition: 1s;
+	/*background-color: rgba(77, 89, 128, 0.2);*/
+	border: 0;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 1.3em;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	box-shadow: 2px 1px 5px black;
+}
+
+.navbar.opaque {
+    background-color: #262626;
+    transition: 1s;
+}
+
+.nav-logo{
+	float: left;
+	padding-left: 10px;
+}
+
+.nav-item{
+	transition: 0.8s;
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-left: 0px;
+}
+
+.nav-item:hover{
+	background-color: white;
+}
+
+.nav-link{
+	transition: 0.8s;
+	color: white;
+}
+
+.nav-link:hover{
+	color: black;
+	text-shadow: none;
+}
+
+.navbar-toggler {
+	border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown {
+
+}
+
+.dropdown-content {
+	padding-left: 0px;
+	list-style-type: none;
+  	visibility: hidden;
+  	position: absolute;
+  	min-width: 230px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	transform: translateY(-1em);
+  	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown.opaque:hover .dropdown-content{
+  	visibility: visible;
+  	background-color: white;
+  	box-shadow: 2px 1px 5px black;
+  	transform: translateY(0%);
+  	transition-delay: 0s, 0s, 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  	visibility: visible;
+  	background-color: transparent;
+  	box-shadow: 2px 1px 5px black;
+  	transform: translateY(0%);
+  	transition-delay: 0s, 0s, 0.3s;
+}
+
+.nav-subitem{
+	transition: background-color 1s;
+	
+}
+
+.nav-subitem:hover {
+	background-color: white;
+}
+
+.nav-subitem:hover .nav-sublink{
+	color: black;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.nav-sublink{
+	padding-left:2px;
+	color: white;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 0.55em;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.logo{
+	width: 40%;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background: url(Imgs/background.jpg) no-repeat center center scroll;
+	background-size: cover;
+}
+
+.intro{
+	font-family: 'proxima-nova', sans-serif;
+	color: white;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.intro h1{
+	font-size: 3.5em;
+	background-image: linear-gradient(white, white);
+  	background-size: 0px 2px, auto;
+  	background-repeat: no-repeat;
+  	background-position: center bottom;
+  	transition: all 0.8s ease-out;
+  	padding-bottom: 10px;
+
+}
+
+.intro h1:hover{
+	background-size: 100% 2px, auto;
+
+}
+
+.intro h5{
+	padding-top: 5px;
+}
+
+.btn{
+	color: white;
+	transition: 1s;
+	margin-top: 15px;
+	border: 0.5px solid #ffffff;
+	border-radius: 0px;
+	margin-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+
+.aboutMe h2{
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+
+.aboutMe p{
+	font-size: 1.2em;
+}
+
+.networks h2{
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+.networkIcon{
+	color: #4d5980;
+	transition: 0.6s;
+}
+
+.networkIcon:hover{
+	color: #262626;
+}
+
+.footer{
+	background-color: #262626;
+	color: white;
+	margin-top: 100px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 0.75em;
+}
+
+.footer p{
+	margin-bottom: 0px;
+}
